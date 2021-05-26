@@ -1,0 +1,44 @@
+
+
+<div id="sect1" class="container-fluid">
+    <div class="col d-flex justify-content-center">
+  
+      <div class="card" >
+        <div class="card-title">
+          <div class="text-center">
+            <p style="font-size: larger; margin-top:2%">Please Login</p>
+          </div>
+          <hr>
+
+        </div>
+        <div class="card-body">
+     
+
+          <form #myForm="ngForm" (ngSubmit)="fnSubmit(myForm)">
+            <mat-form-field  style="width:100% ;" class="example-full-width" appearance="outline">
+                <span matPrefix>
+                  <mat-icon >person</mat-icon>
+                </span>
+                <input matInput  type="email"  placeholder="Enter username" name="user" ngModel required >
+
+              </mat-form-field>
+              <mat-form-field  style="width:100% ;" class="example-full-width" appearance="outline">
+                <span matPrefix>
+                  <mat-icon >visibility_off</mat-icon>
+                </span>
+                <input  matInput  type="password"  placeholder="Enter username" name="password" ngModel required>
+
+              </mat-form-field>
+             <div style="text-align: center;">
+                <button class="btn btn-success" [disabled]="!myForm.valid">Login</button>
+
+            </div>   
+        
+        </form>
+ 
+  
+        </div>
+      </div>
+    </div>
+  
+  </div>

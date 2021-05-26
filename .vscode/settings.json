@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": "dist\\gm",
+    "appService.defaultWebAppToDeploy": "/subscriptions/03cccec4-565a-49cf-91b6-a46f8c8b072e/resourceGroups/Thanmai_RG/providers/Microsoft.Web/sites/gmangular"
+}
