@@ -161,7 +161,7 @@ export class ListComponent implements OnInit {
   fnSubmit(form: NgForm) {
     sessionStorage.setItem("feedback_data", JSON.stringify(form.value))
 
-    // setTimeout(()=>{this.isfeedback=false},2000)
+     setTimeout(()=>{ form.reset();},1000)
   }
   fnReset(form: NgForm) {
     form.reset();
